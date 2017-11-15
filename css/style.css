@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Raleway:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Kelly+Slab");
 * {
   box-sizing: border-box; }
 
@@ -43,9 +44,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 75px;
   text-align: center;
   color: #fff;
-  font-size: 1.1em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500; }
+  font-size: 1.3em;
+  font-family: 'Kelly Slab', cursive;
+  font-weight: bolder; }
 
 .row {
   width: 100%;
@@ -67,12 +68,17 @@ h1, h2, h3, h4, h5, h6 {
   .work .card_full {
     width: 100%; }
   .work .card_half {
-    width: 48%;
+    width: 48.5%;
+    float: left; }
+  .work .card_third {
+    width: 75%;
     float: left; }
   .work .left {
     margin-right: 1.5%; }
   .work .right {
     margin-left: 1.5%; }
+  .work .tall {
+    height: 700px; }
   .work .card_1 {
     background-image: url("../images/computer.png");
     background-size: contain;
@@ -87,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../images/happy.png");
     background-size: 50%;
     background-position: 230px 10px;
+    background-repeat: no-repeat; }
+  .work .card_4 {
+    background-image: url("../images/blue.png");
+    background-size: 50%;
+    background-position: right top;
     background-repeat: no-repeat; }
   .work .card_inner {
     display: table-cell;
@@ -108,6 +119,23 @@ h1, h2, h3, h4, h5, h6 {
   .work .green {
     background: rgba(80, 218, 93, 0.64); }
   .work .purple {
-    background: rgba(81, 16, 140, 0.62); }
+    background: rgba(145, 89, 219, 0.64); }
+  .work .blue {
+    background: rgba(131, 226, 245, 0.64); }
+  .work .view_more {
+    width: 25%;
+    float: left;
+    height: 450px;
+    padding-left: 3em; }
+    .work .view_more p {
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 450px;
+      margin: 0;
+      color: #9292ab; }
+    .work .view_more a {
+      text-decoration: none; }
+      .work .view_more a:hover p {
+        color: #ea48eb; }
 
 /*# sourceMappingURL=style.css.map */

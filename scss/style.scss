@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab');
 
 // Variables
 $pink: #ea48eb;
@@ -66,9 +67,9 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 75px;
     text-align: center;
     color: $white;
-    font-size: 1.1em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-size: 1.3em;
+    font-family: 'Kelly Slab', cursive; 
+    font-weight: bolder;;
 }
 
 .row {
@@ -96,14 +97,21 @@ h1,h2,h3,h4,h5,h6 {
         width: 100%;
     }
     .card_half {
-       width: 48%;
+       width: 48.5%;
        float: left;
+    }
+    .card_third {
+        width: 75%;
+        float: left;
     }
     .left{
        margin-right: 1.5%;
     }
     .right{
        margin-left: 1.5%;
+    }
+    .tall {
+        height: 700px;
     }
     .card_1{
        @include bg_img('../images/computer.png', contain, right, no-repeat)
@@ -114,6 +122,9 @@ h1,h2,h3,h4,h5,h6 {
     .card_3{
       @include bg_img('../images/happy.png', 50%, 230px 10px, no-repeat)
    }
+   .card_4{
+    @include bg_img('../images/blue.png', 50%, right top, no-repeat)
+ }
     .card_inner {
         display: table-cell;
         vertical-align: middle;
@@ -140,6 +151,31 @@ h1,h2,h3,h4,h5,h6 {
        background: rgba(80, 218, 93, 0.64);
     }
     .purple {
-       background: rgba(81, 16, 140, 0.62);
+       background: rgba(145, 89, 219, 0.64);
+    }
+    .blue {
+        background: rgba(131, 226, 245, 0.64);
+    }
+
+    .view_more {
+        width: 25%;
+        float: left;
+        height: 450px;
+        padding-left: 3em;
+        p {
+            font-size: 1.25em;
+            font-weight: 700;
+            line-height: 450px;
+            margin: 0;
+            color: rgba(146, 146, 171, 1);
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                p {
+                    color: $pink;
+                }
+            }
+        }
     }
 }
